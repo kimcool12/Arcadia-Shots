@@ -1,0 +1,56 @@
+/* Hero section with background */
+.hero {
+  position: relative;
+  height: 70vh;
+  /* full screen height */
+  background: url("images/hero.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    /* adjust height for smaller screens */
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top:0; right:0; bottom:0; left:0 */
+  background: inherit;
+  filter: blur(1px) brightness(0.7);
+  z-index: 0;
+  /* stay behind text */
+}
+
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  /* make sure text is above */
+  color: white;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-40%);
+  text-shadow: 0 0 5px #201f1f;
+}
+
+.intro {
+ position: relative;
+  background: 
+    linear-gradient(to right, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%),
+    url('images/2.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  color: white; /* so text is visible */
+  padding: 100px;
+   box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.8);
+}
+
+footer{
+  border-top: 5px solid #444;
+}
