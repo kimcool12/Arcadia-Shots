@@ -4,7 +4,7 @@
   height: 70vh;
    background-color: #111;
   /* full screen height */
-  background: url("images/hero.jpg") no-repeat center center;
+  background: url("images/hero.webp") no-repeat center center;
   background-size: cover;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -45,7 +45,7 @@
   background-color: #111;
   background: 
     linear-gradient(to right, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%),
-    url('images/2.png') no-repeat center center;
+    url('images/2.webp') no-repeat center center;
   background-size: cover;
   background-position: center;
   color: white; /* so text is visible */
